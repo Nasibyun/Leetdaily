@@ -5,7 +5,11 @@ This repository contains my accepted solutions to LeetCode problems. I use it to
 
 ## 📌 Languages
 
-* C++
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=cpp" width="40" /> C++ <br>
+  <img src="https://skillicons.dev/icons?i=java" width="40" /> Java <br>
+  <img src="https://skillicons.dev/icons?i=mysql" width="40" /> MySQL
+</p>
 
 ## 🎯 Goals
 
