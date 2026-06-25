@@ -5,7 +5,7 @@ public:
         vector<int> count(2 * n + 2), acc(2 * n + 2);
         count[pre] = 1, acc[pre] = 1;
 
-        for (int a : nums) {
+        for(int a : nums){
             pre += (a == target ? 1 : -1);
             count[pre]++;
             acc[pre] = acc[pre - 1] + count[pre];
