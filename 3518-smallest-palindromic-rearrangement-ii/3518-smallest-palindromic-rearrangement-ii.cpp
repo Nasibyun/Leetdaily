@@ -1,102 +1,75 @@
 class Solution {
-public:
-    static const int LIMIT = 1000005;
-    static int comb[5005][5005];
-    static bool done;
+ public:
+  std::string smallestPalindrome(std::string s, int k) {
+    std::vector<int> count(26);
 
-    static void build() {
-        if (done) return;
-
-        for (int i = 0; i <= 5000; i++) {
-            comb[i][0] = 1;
-            comb[i][i] = 1;
-
-            for (int j = 1; j < i; j++) {
-                long long val = 1LL * comb[i - 1][j - 1] + comb[i - 1][j];
-                comb[i][j] = min((long long)LIMIT, val);
-            }
-        }
-
-        done = true;
+    for (int i = 0; i < std::size(s) / 2; ++i) {
+      ++count[s[i] - 'a'];
     }
 
-    long long countWays(vector<int> &cnt, int len, int k) {
-        long long ans = 1;
-        int remain = len;
+    int total = 0, counting = 1, remain = 0;
+    int i;
 
-        for (int i = 0; i < 26; i++) {
-            if (cnt[i] == 0) continue;
-
-            ans *= comb[remain][cnt[i]];
-            if (ans >= LIMIT || ans > k)
-                return LIMIT;
-
-            remain -= cnt[i];
+    for (i = std::size(count) - 1; i >= 0; --i) {
+      for (int c = 1; c <= count[i]; ++c) {
+        ++total;
+        counting = counting * total / c;
+        if (counting >= k) {
+          remain = count[i] - c;
+          break;
         }
+      }
 
-        return ans;
+      if (counting >= k) {
+        break;
+      }
     }
 
-    string smallestPalindrome(string s, int k) {
-        build();
-
-        vector<int> freq(26, 0);
-
-        for (char c : s)
-            freq[c - 'a']++;
-
-        int oddCnt = 0;
-        char middle = '#';
-        int halfLen = 0;
-
-        for (int i = 0; i < 26; i++) {
-            if (freq[i] % 2) {
-                oddCnt++;
-                middle = char('a' + i);
-            }
-
-            freq[i] /= 2;
-            halfLen += freq[i];
-        }
-
-        if (oddCnt > 1)
-            return "";
-
-        if (countWays(freq, halfLen, k) < k)
-            return "";
-
-        string left = "";
-
-        for (int pos = 0; pos < halfLen; pos++) {
-
-            for (int ch = 0; ch < 26; ch++) {
-
-                if (freq[ch] == 0)
-                    continue;
-
-                freq[ch]--;
-
-                long long ways = countWays(freq, halfLen - pos - 1, k);
-
-                if (ways >= k) {
-                    left.push_back(char('a' + ch));
-                    break;
-                }
-
-                k -= ways;
-                freq[ch]++;
-            }
-        }
-
-        string right = left;
-        reverse(right.begin(), right.end());
-
-        if (oddCnt)
-            return left + string(1, middle) + right;
-
-        return left + right;
+    if (counting < k) {
+      return "";
     }
+
+    std::string hasil(std::size(s), 0);
+    int l = 0;
+
+    for (int j = 0; j <= i; ++j) {
+      const char x = 'a' + j;
+      const int c = j != i ? count[j] : remain;
+
+      for (int _ = 0; _ < c; ++_) {
+        --count[j];
+        hasil[l++] = x;
+      }
+    }
+
+    while (total) {
+      for (int j = i; j < std::size(count); ++j) {
+        if (!count[j]) {
+          continue;
+        }
+
+        const auto new_count = static_cast<int64_t>(counting) * count[j] / total;
+
+        if (new_count < k) {
+          k -= new_count;
+          continue;
+        }
+
+        counting = new_count;
+        --count[j];
+        --total;
+        hasil[l++] = 'a' + j;
+        break;
+      }
+    }
+
+    if (std::size(s) % 2) {
+      hasil[l++] = s[std::size(s) / 2];
+    }
+
+    for (int i = l - 1 - std::size(s) % 2; i >= 0; --i) {
+      hasil[l++] = hasil[i];
+    }
+    return hasil;
+  }
 };
-
-int Solution::comb[5005][5005];
-bool Solution::done = false;
