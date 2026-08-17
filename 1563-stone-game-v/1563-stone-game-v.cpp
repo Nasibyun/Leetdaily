@@ -1,3 +1,9 @@
+static const auto fast_io = []() [[gnu::always_inline]] {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return nullptr;
+}();
 class Solution {
 public:
     int stoneGameV(vector<int>& a) {
