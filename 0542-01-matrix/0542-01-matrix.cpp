@@ -18,8 +18,9 @@ public:
         }
 
         while(!q.empty()){
-            auto [rc,d] = q.front();
-            auto [r,c] = rc;
+            int r=q.front().first.first;
+            int c=q.front().first.second;
+            int d=q.front().second;
             q.pop();
             ans[r][c] = d;
 
