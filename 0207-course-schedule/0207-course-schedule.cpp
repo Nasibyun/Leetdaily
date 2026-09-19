@@ -1,19 +1,21 @@
 class Solution {
 public:
-    bool dfs(int node, vector<vector<int>>& adj, vector<int>& vis, vector<int>&path){
-        vis[node] = 1;
-        path[node] = 1;
+    bool dfs(int node, vector<vector<int>>& adj, vector<int>& vis){
+        if(vis[node] == 1){
+            return true;
+        }
+        if(vis[node] == 2){
+            return false;
+        }
 
-        for(auto& it : adj[node]){
-            if(!vis[it]){
-                if(dfs(it,adj,vis,path)){
-                    return true;
-                }
-            }else if(path[it]){
+        vis[node] = 1;
+        for(int i=0; i<adj[node].size(); i++){
+            if(dfs(adj[node][i],adj,vis)){
                 return true;
             }
         }
-        path[node] = 0;
+
+        vis[node] = 2;
         return false;
     }
     bool canFinish(int num, vector<vector<int>>& pre) {
@@ -22,10 +24,9 @@ public:
             adj[p[1]].push_back(p[0]);
         }
         vector<int> vis(num,0);
-        vector<int> path(num,0);
         for(int i=0; i<num; i++){
             if(!vis[i]){
-                if(dfs(i,adj,vis,path)){
+                if(dfs(i,adj,vis)){
                     return false;
                 }
             }
