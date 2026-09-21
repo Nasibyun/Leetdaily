@@ -1,26 +1,23 @@
 class Solution {
 public:
     vector<long long> resultArray(vector<int>& nums, int k) {
-        vector<long long> ans(k, 0);
-        vector<int> dp(k, 0);
+        vector<long long> res(k);
+        int dp[2][k];
+        memset(dp, 0, sizeof(dp));
+        int prev = 0, curr = 1;
 
-        for (int num : nums) {
-            vector<int> ndp(k, 0);
-
-            int r = num % k;
-            ndp[r]++;
-
-            for (int j = 0; j < k; j++) {
-                if (dp[j]) {
-                    int nr = (j * r) % k;
-                    ndp[nr] += dp[j];
-                }
+        for (int num: nums) {
+            num %= k;
+            memset(dp[curr], 0, sizeof(dp[curr]));
+            dp[curr][num] = 1;
+            for (int rem = 0; rem < k; rem++) {
+                dp[curr][rem * num % k] += dp[prev][rem];
             }
-            for (int j = 0; j < k; j++)
-                ans[j] += ndp[j];
-            dp = ndp;
+            for (int rem = 0; rem < k; rem++) {
+                res[rem] += dp[curr][rem];
+            }
+            swap(prev, curr);
         }
-
-        return ans;
+        return res;
     }
 };
