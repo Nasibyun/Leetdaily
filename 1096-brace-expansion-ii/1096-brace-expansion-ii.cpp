@@ -1,68 +1,41 @@
 class Solution {
 public:
-    string s;
-    int pos = 0;
-
-    set<string> mergeUnion(set<string> a, set<string> b) {
-        for (auto &x : b)
-            a.insert(x);
-        return a;
+    vector<string> multiply(vector<string>& a, vector<string>& b){
+        if(a.empty()) return b;
+        if(b.empty()) return a;
+        vector<string> ans;
+        for(auto&i:a){
+            for(auto&j:b) ans.push_back(i+j);
+        }
+        return ans;
     }
-
-    set<string> multiply(set<string> a, set<string> b) {
-        set<string> res;
-
-        for (auto &x : a) {
-            for (auto &y : b) {
-                res.insert(x + y);
+    
+    vector<string> braceExpansionII(string expression) {
+        vector<string>  res, curr;
+        stack<vector<string>> st;
+        for(auto&x:expression){
+            if(x >= 'a' and x <= 'z'){
+                if(curr.size()) for(auto&i:curr) i += x;
+                else curr.push_back(string(1, x));
+            }
+            else if(x == '{'){
+                st.push(res); st.push(curr);
+                res.clear(), curr.clear();
+            }
+            else if(x == '}'){
+                vector<string> preCurr = st.top(); st.pop();
+                vector<string> preRes = st.top(); st.pop();
+                for(auto&i:curr) res.push_back(i);
+                curr = multiply(preCurr, res);
+                res = preRes;
+            }
+            else if(x == ','){
+                for(auto&i:curr) res.push_back(i);
+                curr.clear();
             }
         }
-
-        return res;
-    }
-
-    set<string> parseExpression() {
-        set<string> res = parseTerm();
-
-        while (pos < s.size() && s[pos] == ',') {
-            pos++;
-            res = mergeUnion(res, parseTerm());
-        }
-
-        return res;
-    }
-
-    set<string> parseTerm() {
-        set<string> res = {""};
-
-        while (pos < s.size() && s[pos] != '}' && s[pos] != ',') {
-            set<string> cur = parseFactor();
-            res = multiply(res, cur);
-        }
-
-        return res;
-    }
-
-    set<string> parseFactor() {
-        if (s[pos] == '{') {
-            pos++;
-            set<string> res = parseExpression();
-            pos++;
-            return res;
-        }
-
-        string t(1, s[pos]);
-        pos++;
-
-        return {t};
-    }
-
-    vector<string> braceExpansionII(string expression) {
-        s = expression;
-        pos = 0;
-
-        set<string> ans = parseExpression();
-
-        return vector<string>(ans.begin(), ans.end());
+        for(auto&i:curr) res.push_back(i);
+        sort(res.begin(), res.end());
+        return vector<string>(res.begin(), unique(res.begin(), res.end()));
     }
 };
