@@ -1,26 +1,32 @@
 class Solution {
 public:
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
-        priority_queue< pair<int,ListNode*>, vector<pair<int,ListNode*>>, greater<pair<int,ListNode*>>> pq;
-        for(int i=0; i<lists.size(); i++){
-            if(lists[i]){
-                pq.push({lists[i]->val, lists[i]});
-            }
+    struct cmp {
+        bool operator()(ListNode* a, ListNode* b) { 
+            return a->val > b->val; 
         }
+    };
+    
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        priority_queue<ListNode*, vector<ListNode*>, cmp> pq;
 
-        ListNode dummy(-1);
-        ListNode* temp = &dummy;
+        for (ListNode* head : lists) {
+            if (head)
+                pq.push(head);
+        }
+        ListNode dummy(0);
+        ListNode* curr = &dummy;
 
-        while(!pq.empty()){
-            auto it = pq.top();
+        while (!pq.empty()) {
+            ListNode* node = pq.top();
             pq.pop();
 
-            if(it.second->next){
-                pq.push({it.second->next->val, it.second->next});
-            }
-            temp->next = it.second;
-            temp = temp->next;
+            curr->next = node;
+            curr = curr->next;
+
+            if (node->next)
+                pq.push(node->next);
         }
+
         return dummy.next;
     }
 };
