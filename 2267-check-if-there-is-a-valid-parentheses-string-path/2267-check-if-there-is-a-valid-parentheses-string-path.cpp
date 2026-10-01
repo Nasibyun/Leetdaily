@@ -1,44 +1,19 @@
 class Solution {
 public:
-    int n, m;
-    vector<vector<vector<int>>> dp;
-    
-    bool solve(vector<vector<char>>& grid, int i, int j, int bal) {
-        if (bal < 0) return false;
-        if (bal > n + m) return false;
-        
-        if (i == n - 1 && j == m - 1)
-            return bal == 0 && grid[i][j] == ')';
-        
-        if (dp[i][j][bal] != -1)
-            return dp[i][j][bal];
-        
-        bool ans = false;
-        
-        if (i + 1 < n) {
-            int nb = bal + (grid[i + 1][j] == '(' ? 1 : -1);
-            ans |= solve(grid, i + 1, j, nb);
+    bool hasValidPath(vector<vector<char>>& G) {
+        int m = G.size(), n = G[0].size();
+
+        if ((m + n - 1) & 1 || (G[0][0] & 1)) {
+            return 0;
         }
-        
-        if (j + 1 < m) {
-            int nb = bal + (grid[i][j + 1] == '(' ? 1 : -1);
-            ans |= solve(grid, i, j + 1, nb);
+        vector<bitset<102>> dp(n + 1);
+        dp[1].set(0);
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                dp[j + 1] = ((dp[j + 1] | dp[j]) << 1) >> ((G[i][j] & 1) << 1);
+            }
         }
-        
-        return dp[i][j][bal] = ans;
-    }
-    
-    bool hasValidPath(vector<vector<char>>& grid) {
-        n = grid.size();
-        m = grid[0].size();
-        
-        if (grid[0][0] == ')' || grid[n-1][m-1] == '(')
-            return false;
-        
-        if ((n + m - 1) % 2)
-            return false;
-        
-        dp.assign(n, vector<vector<int>>(m, vector<int>(n + m, -1)));
-        return solve(grid, 0, 0, 1);
+        return dp[n].test(0);
     }
 };
