@@ -8,6 +8,9 @@ public:
         return dp[i] = max(t, nt);
     }
     int rob(vector<int>& nums) {
+
+        // memoization
+        
         int n = nums.size();
         vector<int> dp(n+1, -1);
         return f(0, nums, dp);
