@@ -4,12 +4,15 @@ public:
         // tabulation
 
         int n = nums.size();
-        vector<int> dp(n+2, 0);
+        // vector<int> dp(n+2, 0);
+        int curr=0, pr =0, mpr =0;
         for(int i=n-1; i>=0; i--){
-            int t = nums[i] + dp[i+2];
-            int nt = dp[i+1];
-            dp[i] = max(t,nt);
+            int t = nums[i] + mpr;
+            int nt = pr;
+            curr = max(t, nt);
+            mpr = pr;
+            pr = curr;
         }
-        return dp[0];
+        return pr;
     }
 };
