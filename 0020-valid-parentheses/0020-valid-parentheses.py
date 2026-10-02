@@ -1,22 +1,13 @@
-class Solution(object):
+class Solution:
     def isValid(self, s):
         stack = []
-        for c in s:
-            if c == '(' or c == '[' or c == '{':
-                stack.append(c)
-                continue
-            
-            if not stack:
-                return False
-            
-            if c == ')' and stack[-1] != '(':
-                return False
-            if c == ']' and stack[-1] != '[':
-                return False
-            if c == '}' and stack[-1] != '{':
-                return False
-            stack.pop()
+        pairs = {')': '(', ']': '[', '}': '{'}
 
-        return len(stack) == 0
-            
-        
+        for c in s:
+            if c in '([{':
+                stack.append(c)
+            else:
+                if not stack or stack.pop() != pairs[c]:
+                    return False
+
+        return not stack
