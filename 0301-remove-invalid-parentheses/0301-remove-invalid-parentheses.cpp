@@ -1,57 +1,31 @@
 class Solution {
-public:
-    bool isValid(string s) {
-        int cnt = 0;
+    vector<string> ans;
+    void dfs(string s, int start, int last, char open, char close){
+        int balance = 0;
 
-        for(char c : s){
-            if(c == '(')
-                cnt++;
-            else if(c == ')'){
-                cnt--;
+        for(int i = start; i<s.size(); i++){
+            if(s[i] == open) balance++;
+            if(s[i] == close) balance--;
+            if(balance >= 0) continue;
 
-                if(cnt < 0)
-                    return false;
+            for(int j = last; j<=i; j++){
+                if(s[j] == close && (j==last || s[j-1] != close)){
+                    dfs(s.substr(0, j) + s.substr(j+1), i, j, open, close);
+                }
             }
+            return;
         }
-        return cnt == 0;
+        reverse(s.begin(), s.end());
+
+        if(open=='('){
+            dfs(s, 0, 0, ')', '(');
+        }else{
+            ans.push_back(s);
+        }
     }
-
+public:
     vector<string> removeInvalidParentheses(string s) {
-        vector<string> ans;
-        queue<string> q;
-        unordered_set<string> vis;
-
-        q.push(s);
-        vis.insert(s);
-        bool found = false;
-
-        while(!q.empty() && !found){
-            int size = q.size();
-
-            while(size--){
-                string curr = q.front();
-                q.pop();
-
-                if(isValid(curr)){
-                    ans.push_back(curr);
-                    found = true;
-                }
-                if(found)
-                    continue;
-
-                for(int i = 0; i < curr.size(); i++){
-                    if(curr[i] != '(' && curr[i] != ')')
-                        continue;
-
-                    string next = curr.substr(0, i) + curr.substr(i + 1);
-
-                    if(!vis.count(next)){
-                        vis.insert(next);
-                        q.push(next);
-                    }
-                }
-            }
-        }
+        dfs(s, 0, 0, '(', ')');
         return ans;
     }
 };
