@@ -1,25 +1,18 @@
 class Solution:
     def minInsertions(self, s: str) -> int:
-        ans = 0
-        open = 0
-        n = len(s)
-        i = 0
+        s = s.replace("))", "}")
+        req = 0
+        miss = 0
 
-        while i < n:
-            if s[i] == '(':
-                open += 1
+        for bracket in s:
+            if bracket == "(":
+                req += 2
             else:
-                if i+1 < n and s[i+1] == ')':
-                    i+=1
+                if bracket == ")":
+                    miss += 1
+                if req:
+                    req -= 2
                 else:
-                    ans+=1
-
-                if open==0:
-                    ans+=1
-                else:
-                    open-=1
-
-            i+=1
-
-        ans += 2*open
-        return ans
+                    miss += 1
+        
+        return miss + req
