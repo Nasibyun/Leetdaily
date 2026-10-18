@@ -7,7 +7,9 @@ public:
         cap = capacity;
     }
     int get(int key) {
-        if(!mp.count(key)) return -1;
+        if(mp.find(key)==mp.end()){
+            return -1;
+        }
 
         auto it = mp[key];
         int value = it->second;
