@@ -43,6 +43,7 @@ Each problem includes:
 |  |
 | ------- |
 | [0904-fruit-into-baskets](https://github.com/Nasibyun/Leetdaily/tree/master/0904-fruit-into-baskets) |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 ## Hash Table
 |  |
@@ -66,4 +67,16 @@ Each problem includes:
 |  |
 | ------- |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
+## Two Pointers
+|  |
+| ------- |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
+## Binary Search
+|  |
+| ------- |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
+## Sorting
+|  |
+| ------- |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
 <!---LeetCode Topics End-->
