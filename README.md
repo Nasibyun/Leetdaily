@@ -43,12 +43,14 @@ Each problem includes:
 |  |
 | ------- |
 | [0136-single-number](https://github.com/Nasibyun/Leetdaily/tree/master/0136-single-number) |
+| [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
 | [0904-fruit-into-baskets](https://github.com/Nasibyun/Leetdaily/tree/master/0904-fruit-into-baskets) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 ## Hash Table
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
 | [0904-fruit-into-baskets](https://github.com/Nasibyun/Leetdaily/tree/master/0904-fruit-into-baskets) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 ## Sliding Window
@@ -60,6 +62,7 @@ Each problem includes:
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/Nasibyun/Leetdaily/tree/master/0231-power-of-two) |
+| [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 ## Dynamic Programming
 |  |
@@ -76,10 +79,12 @@ Each problem includes:
 ## Binary Search
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
 ## Sorting
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
 ## Divide and Conquer
 |  |
@@ -91,6 +96,7 @@ Each problem includes:
 | [0136-single-number](https://github.com/Nasibyun/Leetdaily/tree/master/0136-single-number) |
 | [0191-number-of-1-bits](https://github.com/Nasibyun/Leetdaily/tree/master/0191-number-of-1-bits) |
 | [0231-power-of-two](https://github.com/Nasibyun/Leetdaily/tree/master/0231-power-of-two) |
+| [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
 ## Recursion
 |  |
 | ------- |
