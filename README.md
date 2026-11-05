@@ -42,6 +42,7 @@ Each problem includes:
 ## Array
 |  |
 | ------- |
+| [0136-single-number](https://github.com/Nasibyun/Leetdaily/tree/master/0136-single-number) |
 | [0904-fruit-into-baskets](https://github.com/Nasibyun/Leetdaily/tree/master/0904-fruit-into-baskets) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
@@ -87,6 +88,7 @@ Each problem includes:
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/Nasibyun/Leetdaily/tree/master/0136-single-number) |
 | [0191-number-of-1-bits](https://github.com/Nasibyun/Leetdaily/tree/master/0191-number-of-1-bits) |
 | [0231-power-of-two](https://github.com/Nasibyun/Leetdaily/tree/master/0231-power-of-two) |
 ## Recursion
