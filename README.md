@@ -70,6 +70,7 @@ Each problem includes:
 | [0231-power-of-two](https://github.com/Nasibyun/Leetdaily/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/Nasibyun/Leetdaily/tree/master/3789-minimum-cost-to-acquire-required-items) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -121,4 +122,8 @@ Each problem includes:
 |  |
 | ------- |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Nasibyun/Leetdaily/tree/master/1606-find-servers-that-handled-most-number-of-requests) |
+## Greedy
+|  |
+| ------- |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/Nasibyun/Leetdaily/tree/master/3789-minimum-cost-to-acquire-required-items) |
 <!---LeetCode Topics End-->
