@@ -43,6 +43,7 @@ Each problem includes:
 |  |
 | ------- |
 | [0136-single-number](https://github.com/Nasibyun/Leetdaily/tree/master/0136-single-number) |
+| [0198-house-robber](https://github.com/Nasibyun/Leetdaily/tree/master/0198-house-robber) |
 | [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
 | [0904-fruit-into-baskets](https://github.com/Nasibyun/Leetdaily/tree/master/0904-fruit-into-baskets) |
@@ -75,6 +76,7 @@ Each problem includes:
 ## Dynamic Programming
 |  |
 | ------- |
+| [0198-house-robber](https://github.com/Nasibyun/Leetdaily/tree/master/0198-house-robber) |
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3693-climbing-stairs-ii](https://github.com/Nasibyun/Leetdaily/tree/master/3693-climbing-stairs-ii) |
