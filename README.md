@@ -78,6 +78,7 @@ Each problem includes:
 ## Dynamic Programming
 |  |
 | ------- |
+| [0072-edit-distance](https://github.com/Nasibyun/Leetdaily/tree/master/0072-edit-distance) |
 | [0198-house-robber](https://github.com/Nasibyun/Leetdaily/tree/master/0198-house-robber) |
 | [0322-coin-change](https://github.com/Nasibyun/Leetdaily/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
@@ -155,6 +156,7 @@ Each problem includes:
 ## String
 |  |
 | ------- |
+| [0072-edit-distance](https://github.com/Nasibyun/Leetdaily/tree/master/0072-edit-distance) |
 | [1143-longest-common-subsequence](https://github.com/Nasibyun/Leetdaily/tree/master/1143-longest-common-subsequence) |
 ## Longest Common Subsequence
 |  |
