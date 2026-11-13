@@ -81,6 +81,7 @@ Each problem includes:
 | [0198-house-robber](https://github.com/Nasibyun/Leetdaily/tree/master/0198-house-robber) |
 | [0322-coin-change](https://github.com/Nasibyun/Leetdaily/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
+| [1143-longest-common-subsequence](https://github.com/Nasibyun/Leetdaily/tree/master/1143-longest-common-subsequence) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3693-climbing-stairs-ii](https://github.com/Nasibyun/Leetdaily/tree/master/3693-climbing-stairs-ii) |
 ## Heap (Priority Queue)
@@ -151,4 +152,12 @@ Each problem includes:
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/Nasibyun/Leetdaily/tree/master/0322-coin-change) |
+## String
+|  |
+| ------- |
+| [1143-longest-common-subsequence](https://github.com/Nasibyun/Leetdaily/tree/master/1143-longest-common-subsequence) |
+## Longest Common Subsequence
+|  |
+| ------- |
+| [1143-longest-common-subsequence](https://github.com/Nasibyun/Leetdaily/tree/master/1143-longest-common-subsequence) |
 <!---LeetCode Topics End-->
