@@ -53,6 +53,7 @@ Each problem includes:
 | [1882-process-tasks-using-servers](https://github.com/Nasibyun/Leetdaily/tree/master/1882-process-tasks-using-servers) |
 | [2747-count-zero-request-servers](https://github.com/Nasibyun/Leetdaily/tree/master/2747-count-zero-request-servers) |
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/Nasibyun/Leetdaily/tree/master/3105-longest-strictly-increasing-or-strictly-decreasing-subarray) |
+| [3364-minimum-positive-sum-subarray](https://github.com/Nasibyun/Leetdaily/tree/master/3364-minimum-positive-sum-subarray) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3693-climbing-stairs-ii](https://github.com/Nasibyun/Leetdaily/tree/master/3693-climbing-stairs-ii) |
 ## Hash Table
@@ -67,6 +68,7 @@ Each problem includes:
 | ------- |
 | [0904-fruit-into-baskets](https://github.com/Nasibyun/Leetdaily/tree/master/0904-fruit-into-baskets) |
 | [2747-count-zero-request-servers](https://github.com/Nasibyun/Leetdaily/tree/master/2747-count-zero-request-servers) |
+| [3364-minimum-positive-sum-subarray](https://github.com/Nasibyun/Leetdaily/tree/master/3364-minimum-positive-sum-subarray) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 ## Math
 |  |
@@ -141,6 +143,7 @@ Each problem includes:
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
+| [3364-minimum-positive-sum-subarray](https://github.com/Nasibyun/Leetdaily/tree/master/3364-minimum-positive-sum-subarray) |
 ## Breadth-First Search
 |  |
 | ------- |
