@@ -49,6 +49,7 @@ Each problem includes:
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
 | [0904-fruit-into-baskets](https://github.com/Nasibyun/Leetdaily/tree/master/0904-fruit-into-baskets) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Nasibyun/Leetdaily/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Nasibyun/Leetdaily/tree/master/1606-find-servers-that-handled-most-number-of-requests) |
 | [1882-process-tasks-using-servers](https://github.com/Nasibyun/Leetdaily/tree/master/1882-process-tasks-using-servers) |
 | [2747-count-zero-request-servers](https://github.com/Nasibyun/Leetdaily/tree/master/2747-count-zero-request-servers) |
@@ -75,6 +76,7 @@ Each problem includes:
 | ------- |
 | [0231-power-of-two](https://github.com/Nasibyun/Leetdaily/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/Nasibyun/Leetdaily/tree/master/0268-missing-number) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Nasibyun/Leetdaily/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3789-minimum-cost-to-acquire-required-items](https://github.com/Nasibyun/Leetdaily/tree/master/3789-minimum-cost-to-acquire-required-items) |
 ## Dynamic Programming
@@ -85,6 +87,7 @@ Each problem includes:
 | [0322-coin-change](https://github.com/Nasibyun/Leetdaily/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
 | [1143-longest-common-subsequence](https://github.com/Nasibyun/Leetdaily/tree/master/1143-longest-common-subsequence) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Nasibyun/Leetdaily/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3693-climbing-stairs-ii](https://github.com/Nasibyun/Leetdaily/tree/master/3693-climbing-stairs-ii) |
 ## Heap (Priority Queue)
@@ -143,6 +146,7 @@ Each problem includes:
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Nasibyun/Leetdaily/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [3364-minimum-positive-sum-subarray](https://github.com/Nasibyun/Leetdaily/tree/master/3364-minimum-positive-sum-subarray) |
 ## Breadth-First Search
 |  |
