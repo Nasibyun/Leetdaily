@@ -88,6 +88,7 @@ Each problem includes:
 | [0410-split-array-largest-sum](https://github.com/Nasibyun/Leetdaily/tree/master/0410-split-array-largest-sum) |
 | [1143-longest-common-subsequence](https://github.com/Nasibyun/Leetdaily/tree/master/1143-longest-common-subsequence) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Nasibyun/Leetdaily/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Nasibyun/Leetdaily/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Nasibyun/Leetdaily/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3693-climbing-stairs-ii](https://github.com/Nasibyun/Leetdaily/tree/master/3693-climbing-stairs-ii) |
 ## Heap (Priority Queue)
@@ -100,6 +101,7 @@ Each problem includes:
 |  |
 | ------- |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Nasibyun/Leetdaily/tree/master/1385-find-the-distance-value-between-two-arrays) |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Nasibyun/Leetdaily/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 ## Binary Search
 |  |
 | ------- |
@@ -165,6 +167,7 @@ Each problem includes:
 | ------- |
 | [0072-edit-distance](https://github.com/Nasibyun/Leetdaily/tree/master/0072-edit-distance) |
 | [1143-longest-common-subsequence](https://github.com/Nasibyun/Leetdaily/tree/master/1143-longest-common-subsequence) |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Nasibyun/Leetdaily/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 ## Longest Common Subsequence
 |  |
 | ------- |
